@@ -1,6 +1,10 @@
 🚀 DevVoid Task Management System (MERN + Gemini AI)
 📋 Overview
 
+cd taskmate
+cd backend
+
+
 This project is built as part of the DevVoid Assignment – Round 1 for the Software Engineer (Full-Stack/MERN) position.
 It’s a Project & Task Management System similar to Trello, enhanced with AI-powered assistance using Google Gemini AI.
 
