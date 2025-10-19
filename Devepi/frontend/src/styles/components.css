@@ -1,0 +1,109 @@
+/* General Button Styles */
+.btn-primary {
+  background-color: #4a4de2;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  transition: background-color 0.2s;
+}
+
+.btn-primary:hover {
+  background-color: #3b3aab;
+}
+
+.btn-secondary {
+  background-color: #e2e8f0;
+  color: #2d3748;
+  border: 1px solid #cbd5e1;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.2s;
+}
+
+.btn-secondary:hover {
+  background-color: #cbd5e1;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  color: #718096;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 50%;
+  transition: background-color 0.2s, color 0.2s;
+}
+
+.btn-icon:hover {
+  background-color: #edf2f7;
+  color: #2d3748;
+}
+
+.btn-icon.btn-danger:hover {
+  background-color: #fed7d7;
+  color: #c53030;
+}
+
+/* Task Actions */
+.task-actions {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+/* Task Edit Form */
+.task-edit-form {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-edit-form input,
+.task-edit-form textarea,
+.task-edit-form select {
+  width: 100%;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+/* Card QA */
+.card-qa {
+  margin-top: 16px;
+}
+
+.qa-input-group {
+  display: flex;
+  gap: 8px;
+}
+
+.qa-input-group input {
+  flex-grow: 1;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #cbd5e1;
+}
+
+.ai-answer {
+  margin-top: 12px;
+  background-color: #f7fafc;
+  padding: 12px;
+  border-radius: 6px;
+  color: #2d3748;
+  border: 1px solid #e2e8f0;
+}
+
+.ai-answer strong {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 4px;
+}
