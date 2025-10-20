@@ -13,7 +13,7 @@ export default function CardQA({ taskId }) {
     setAnswer('');
     try {
       const token = localStorage.getItem('token');
-      const res = await axios.post(`https://ai-taskmate-2wce.vercel.app/api/ai/qa/${taskId}`, 
+      const res = await axios.post(`https://ai-taskmate-k7qw.onrender.com/api/ai/qa/${taskId}`, 
         { question }, 
         { headers: { Authorization: `Bearer ${token}` } }
       );

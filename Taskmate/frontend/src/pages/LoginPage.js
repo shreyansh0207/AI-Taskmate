@@ -14,7 +14,7 @@ export default function LoginPage() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post('https://ai-taskmate-2wce.vercel.app/api/auth/login', { email: email.toLowerCase(), password });
+      const res = await axios.post('https://ai-taskmate-k7qw.onrender.com/api/auth/login', { email: email.toLowerCase(), password });
       localStorage.setItem('token', res.data.token);
       if (res.data.user) {
         localStorage.setItem('user', JSON.stringify(res.data.user));

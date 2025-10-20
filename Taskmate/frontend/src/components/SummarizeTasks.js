@@ -8,7 +8,7 @@ export default function SummarizeTasks({ projectId }) {
   const handleSummarize = async () => {
     setLoading(true);
     try {
-      const res = await axios.get(`https://ai-taskmate-2wce.vercel.app/api/ai/summarize/${projectId}`);
+      const res = await axios.get(`https://ai-taskmate-k7qw.onrender.com/api/ai/summarize/${projectId}`);
       setSummary(res.data.summary || 'No summary returned.');
     } catch (e) {
       const serverMsg = e?.response?.data?.error;

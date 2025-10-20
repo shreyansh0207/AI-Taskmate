@@ -7,7 +7,7 @@ import TaskEditDelete from './TaskEditDelete';
 import Modal from './Modal';
 import TaskForm from './TaskForm';
 
-const API_BASE = 'https://ai-taskmate-2wce.vercel.app/api';
+const API_BASE = 'https://ai-taskmate-k7qw.onrender.com/api';
 
 export default function KanbanBoard({ projectId }) {
   const [columns, setColumns] = useState([]);

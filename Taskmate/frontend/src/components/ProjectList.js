@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
-const API_URL = 'https://ai-taskmate-2wce.vercel.app/api/projects';
+const API_URL = 'https://ai-taskmate-k7qw.onrender.com/api/projects';
 
 export default function ProjectList({ onSelect, refresh, onNewProjectClick }) {
   const [projects, setProjects] = useState([]);

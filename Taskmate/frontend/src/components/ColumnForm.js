@@ -9,7 +9,7 @@ export default function ColumnForm({ projectId, onColumnCreated }) {
     e.preventDefault();
     setLoading(true);
     try {
-      await axios.post('https://ai-taskmate-2wce.vercel.app/api/columns', {
+      await axios.post('https://ai-taskmate-k7qw.onrender.com/api/columns', {
         projectId,
         name,
         order: Date.now()

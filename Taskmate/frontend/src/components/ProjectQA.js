@@ -11,7 +11,7 @@ export default function ProjectQA({ projectId }) {
     setLoading(true);
     setAnswer('');
     try {
-      const res = await axios.post(`https://ai-taskmate-2wce.vercel.app/api/ai/project-qa/${projectId}`, { question });
+      const res = await axios.post(`https://ai-taskmate-k7qw.onrender.com/api/ai/project-qa/${projectId}`, { question });
       setAnswer(res.data.answer || 'No answer provided.');
     } catch (e) {
       const serverMsg = e?.response?.data?.error;
