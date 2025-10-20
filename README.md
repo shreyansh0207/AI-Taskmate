@@ -1,8 +1,21 @@
 🚀 DevVoid Task Management System (MERN + Gemini AI)
 📋 Overview
 
+## ⚙️ Setup Instructions
+
+### 1️⃣ Backend Setup
+```bash
 cd taskmate
 cd backend
+npm install
+npm run start
+2️⃣ Frontend Setup
+bash
+Copy code
+cd taskmate
+cd frontend
+npm install
+npm run start
 
 
 This project is built as part of the DevVoid Assignment – Round 1 for the Software Engineer (Full-Stack/MERN) position.
