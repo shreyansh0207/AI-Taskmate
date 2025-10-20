@@ -16,7 +16,7 @@ export default function TaskForm({ projectId, columns, initialStatus, onTaskCrea
     setError('');
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/tasks', {
+      await axios.post('https://ai-taskmate-2wce.vercel.app/api/tasks', {
         projectId,
         title,
         description,

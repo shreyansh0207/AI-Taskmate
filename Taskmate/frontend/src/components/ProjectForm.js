@@ -14,7 +14,7 @@ export default function ProjectForm({ onProjectCreated, onCancel }) {
     setError('');
     try {
       const token = localStorage.getItem('token');
-      await axios.post('http://localhost:5000/api/projects', { name, description }, {
+      await axios.post('https://ai-taskmate-2wce.vercel.app/api/projects', { name, description }, {
         headers: token ? { Authorization: `Bearer ${token}` } : {}
       });
       setName('');

@@ -15,7 +15,7 @@ export default function SignupPage() {
     setLoading(true);
     setError('');
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/register', { name, email: email.toLowerCase(), password });
+      const res = await axios.post('https://ai-taskmate-2wce.vercel.app/api/auth/register', { name, email: email.toLowerCase(), password });
       localStorage.setItem('token', res.data.token);
       if (res.data.user) {
         localStorage.setItem('user', JSON.stringify(res.data.user));

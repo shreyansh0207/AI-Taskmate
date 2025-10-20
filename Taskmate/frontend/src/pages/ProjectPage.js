@@ -14,7 +14,7 @@ export default function ProjectPage() {
 
   useEffect(() => {
     const token = localStorage.getItem('token');
-    axios.get(`http://localhost:5000/api/projects/${projectId}`, { headers: token ? { Authorization: `Bearer ${token}` } : {} })
+    axios.get(`https://ai-taskmate-2wce.vercel.app/api/projects/${projectId}`, { headers: token ? { Authorization: `Bearer ${token}` } : {} })
       .then(res => setProject(res.data))
       .catch(err => console.error(err));
   }, [projectId]);

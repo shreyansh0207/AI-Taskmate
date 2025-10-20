@@ -9,7 +9,7 @@ export default function ColumnEditDelete({ column, onUpdated }) {
   const handleUpdate = async e => {
     e.preventDefault();
     setLoading(true);
-    await axios.put(`http://localhost:5000/api/columns/${column._id}`, { name, order: column.order });
+    await axios.put(`https://ai-taskmate-2wce.vercel.app/api/columns/${column._id}`, { name, order: column.order });
     setEditing(false);
     setLoading(false);
     onUpdated && onUpdated();
@@ -17,7 +17,7 @@ export default function ColumnEditDelete({ column, onUpdated }) {
 
   const handleDelete = async () => {
     setLoading(true);
-    await axios.delete(`http://localhost:5000/api/columns/${column._id}`);
+    await axios.delete(`https://ai-taskmate-2wce.vercel.app/api/columns/${column._id}`);
     setLoading(false);
     onUpdated && onUpdated();
   };

@@ -13,7 +13,7 @@ export default function TaskEditDelete({ task, columns, onUpdated }) {
     e.preventDefault();
     setLoading(true);
     const token = localStorage.getItem('token');
-    await axios.put(`http://localhost:5000/api/tasks/${task._id}`, 
+    await axios.put(`https://ai-taskmate-2wce.vercel.app/api/tasks/${task._id}`, 
       { title, description, status },
       { headers: { Authorization: `Bearer ${token}` } }
     );
@@ -28,7 +28,7 @@ export default function TaskEditDelete({ task, columns, onUpdated }) {
     setLoading(true);
     try {
       const token = localStorage.getItem('token');
-      await axios.delete(`http://localhost:5000/api/tasks/${task._id}`, 
+      await axios.delete(`https://ai-taskmate-2wce.vercel.app/api/tasks/${task._id}`, 
         { headers: { Authorization: `Bearer ${token}` } }
       );
       onUpdated && onUpdated();
